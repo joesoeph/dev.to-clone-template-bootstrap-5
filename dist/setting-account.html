@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/custom.css">
+    <script src="../assets/bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Setting Account</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center flex-fill"><a class="navbar-brand" href="index.html"><img src="../assets/images/bootstrap-logo.svg" alt="" width="50"></a>
+          <form class="w-50">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+        <ul class="nav flex-row">
+          <li class="nav-item d-none d-md-block"><a class="btn btn-primary" href="write-post.html">Write a post</a></li>
+          <li class="nav-item">
+            <button class="btn btn-link position-relative" type="button"><i class="far fa-bell"></i><span class="position-absolute top-0 left-100 translate-notif badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span></span></button>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="far fa-user"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profile.html"><span>Yusuf Fazeri</span><br><small class="text-muted">@joesoeph</small></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="dashboard-posts.html">Dashboard</a></li>
+              <li><a class="dropdown-item" href="write-post.html">Write a post</a></li>
+              <li><a class="dropdown-item" href="reading-lists.html">Reading list</a></li>
+              <li><a class="dropdown-item" href="setting-account.html">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container page-content">
+      <div class="row">   
+        <div class="col-md-3 d-none d-md-block">
+          <div class="mr-4 mt-4"><a class="d-block btn btn-light text-left mb-1" href="setting-profile.html"><span>Profile</span></a><a class="d-block btn btn-light text-left mb-1" href="setting-account.html"><span>Account</span></a><a class="d-block btn btn-light text-left mb-1" href="setting-notifications.html"><span>Notifications</span></a></div>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <h3 class="mb-4">Account Email</h3>
+            <div class="mb-3">
+              <p></p><span class="text-muted pr-3">Primary email</span> joesoeph@mail.com
+              <p></p><span class="text-muted pr-3">Github email</span> joesoeph@mail.com
+            </div>
+          </div>
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <h3 class="mb-4">Set New Password</h3>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password</label>
+              <input class="form-control" id="password" type="password" placeholder="Password...">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="new-password">Create New Password</label>
+              <input class="form-control" id="new-password" type="password" placeholder="Create new passsword...">
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-primary">Set new password</button>
+            </div>
+          </div>
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <h3 class="mb-4 text-danger">Danger Zone</h3>
+            <div class="mb-3">
+              <p>Delete all information about you in this site.</p>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-danger">Delete account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

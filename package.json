@@ -1,0 +1,13 @@
+{
+    "name": "devto-course-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "pug pug/pages/ --extension=html --pretty -w --out dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

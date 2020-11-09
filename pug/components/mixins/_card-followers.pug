@@ -1,0 +1,10 @@
+mixin card-followers(photo, fullname, username)
+    .bg-white.mb-4.p-4.shadow-sm.border-top.border-5.border-primary
+        .d-flex.flex-column.align-items-center
+            img.d-block.rounded-circle.mr-2.mb-3(src=photo alt='Profile Picture' width='80px' height='80px')
+            a.d-flex.flex-column.align-items-center.text-decoration-none.text-dark(href='profile.html')
+            p.mb-0
+                strong #{fullname}
+            small #{username}
+        .mt-4.text-right
+            button.btn.btn-sm.btn-dark Following

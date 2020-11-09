@@ -1,0 +1,21 @@
+.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+.tag-container {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.page-content {
+    margin-top: 80px;
+}
+
+.translate-notif {
+    transform: translateX(-100%) translateY(30%)!important;
+}
+
+.sticky-top-gap {
+    top: 4rem !important;
+}

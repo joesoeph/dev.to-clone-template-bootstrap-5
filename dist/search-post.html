@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/custom.css">
+    <script src="../assets/bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Search Post</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center flex-fill"><a class="navbar-brand" href="index.html"><img src="../assets/images/bootstrap-logo.svg" alt="" width="50"></a>
+          <form class="w-50">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+        <ul class="nav flex-row">
+          <li class="nav-item d-none d-md-block"><a class="btn btn-primary" href="write-post.html">Write a post</a></li>
+          <li class="nav-item">
+            <button class="btn btn-link position-relative" type="button"><i class="far fa-bell"></i><span class="position-absolute top-0 left-100 translate-notif badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span></span></button>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="far fa-user"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profile.html"><span>Yusuf Fazeri</span><br><small class="text-muted">@joesoeph</small></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="dashboard-posts.html">Dashboard</a></li>
+              <li><a class="dropdown-item" href="write-post.html">Write a post</a></li>
+              <li><a class="dropdown-item" href="reading-lists.html">Reading list</a></li>
+              <li><a class="dropdown-item" href="setting-account.html">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container page-content">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+          <h3>Search Post</h3>
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <div class="d-flex"><img class="d-block rounded-circle mr-2" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="40px"/>
+              <div class="d-flex flex-column"><small class="mb-0"><strong>Yusuf Fazeri</strong></small><small class="text-muted">Nov 7 (7 hours ago)</small></div>
+            </div>
+            <div class="pl-4 mt-2"><img class="d-none d-md-block img-fluid pl-4" src="https://via.placeholder.com/1000x420?text=placeholder" alt="Post Image"/></div>
+            <div class="d-flex flex-column pl-4">
+              <h3 class="pl-4 mt-2"><a class="link-dark text-decoration-none" href="post-read.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h3>
+            </div>
+            <div class="pl-4">
+              <div class="pl-4"><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">#css</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">#js</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">#html</a>
+              </div>
+            </div>
+            <div class="pl-4 mt-4">
+              <div class="d-flex justify-content-between pl-4">
+                <div><span class="p-2">0 <i class="far fa-heart ml-2"></i></span><span class="p-2 ml-2">0 <i class="far fa-comments ml-2"></i></span></div>
+                <div><span class="p-2">1 min read</span>
+                  <button class="btn btn-outline-dark"><i class="far fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <div class="d-flex"><img class="d-block rounded-circle mr-2" src="../assets/images/photo-2.jpg" alt="Profile Picture" width="40px"/>
+              <div class="d-flex flex-column"><small class="mb-0"><strong>Alif Apriyanto</strong></small><small class="text-muted">Nov 7 (8 hours ago)</small></div>
+            </div>
+            <div class="pl-4 mt-2"><img class="d-none d-md-block img-fluid pl-4" src="https://via.placeholder.com/1000x420?text=placeholder" alt="Post Image"/></div>
+            <div class="d-flex flex-column pl-4">
+              <h3 class="pl-4 mt-2"><a class="link-dark text-decoration-none" href="post-read.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h3>
+            </div>
+            <div class="pl-4">
+              <div class="pl-4"><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">css</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">js</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">html</a>
+              </div>
+            </div>
+            <div class="pl-4 mt-4">
+              <div class="d-flex justify-content-between pl-4">
+                <div><span class="p-2">0 <i class="far fa-heart ml-2"></i></span><span class="p-2 ml-2">0 <i class="far fa-comments ml-2"></i></span></div>
+                <div><span class="p-2">1 min read</span>
+                  <button class="btn btn-outline-dark"><i class="far fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-4 mb-3 shadow-sm">
+            <div class="d-flex"><img class="d-block rounded-circle mr-2" src="../assets/images/photo-3.jpg" alt="Profile Picture" width="40px"/>
+              <div class="d-flex flex-column"><small class="mb-0"><strong>Juwadi</strong></small><small class="text-muted">Nov 7 (9 hours ago)</small></div>
+            </div>
+            <div class="pl-4 mt-2"><img class="d-none d-md-block img-fluid pl-4" src="https://via.placeholder.com/1000x420?text=placeholder" alt="Post Image"/></div>
+            <div class="d-flex flex-column pl-4">
+              <h3 class="pl-4 mt-2"><a class="link-dark text-decoration-none" href="post-read.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h3>
+            </div>
+            <div class="pl-4">
+              <div class="pl-4"><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">css</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">js</a><a class="badge bg-success text-decoration-none mr-2 p-2" href="tag.html">html</a>
+              </div>
+            </div>
+            <div class="pl-4 mt-4">
+              <div class="d-flex justify-content-between pl-4">
+                <div><span class="p-2">0 <i class="far fa-heart ml-2"></i></span><span class="p-2 ml-2">0 <i class="far fa-comments ml-2"></i></span></div>
+                <div><span class="p-2">1 min read</span>
+                  <button class="btn btn-outline-dark"><i class="far fa-bookmark"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-secondary shadow p-3"><i class="fas fa-redo-alt"></i> Load more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

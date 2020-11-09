@@ -1,0 +1,39 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Create Account
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row
+            .col-12.col-md-6.offset-md-3
+                .mt-4
+                    // Card Input
+                    .bg-white.p-4.mb-3.shadow-sm
+                        h3.mb-4.text-center Welcome to DEV
+                        small.text-muted.text-center.d-block.mb-3
+                            | Have a password? 
+                            a.text-primary.text-decoration-none(href='#') continue your email address
+                        .mb-3
+                        .mt-3
+                            button.btn.btn-dark.btn-block
+                                i.fab.fa-lg.fa-github.mr-3
+                                |  Sign up with GitHub
+                            small.text-muted.d-block.text-center.mt-2
+                                | Already have an account?
+                                a.text-decoration-none(href='#') View more sign in options
+                    // ./Card Input

@@ -1,0 +1,45 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    - var is_navbar_guest = true
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Sign In
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row
+            .col-12.col-md-4.offset-md-4
+                .mt-4
+                    // Card Input
+                    .bg-white.p-4.mb-3.shadow-sm
+                        h3.mb-4.text-center Welcome to DEV
+                        small.text-muted.text-center.d-block.mb-3
+                        | Have a password? 
+                        a.text-primary.text-decoration-none(href='#') continue your email address
+                        .mb-3
+                        .mb-3
+                            label.form-label(for='email') Email
+                            input#email.form-control(type='email' placeholder='Email...')
+                        .mb-3
+                            label.form-label(for='password') Password
+                            input#password.form-control(type='password' placeholder='Password...')
+                        .form-check.form-switch.mb-3
+                            input#option2.form-check-input(type='checkbox')
+                            label.form-check-label(for='option2') Remember me
+                        .mt-3
+                            button.btn.btn-primary.btn-block Continue
+                            a.btn.btn-link.btn-block(href='#') Forgot Password
+                    // ./Card Input

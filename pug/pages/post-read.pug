@@ -1,0 +1,33 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Post Read
+
+block body-content
+    include ../components/_navbar.pug
+    .container-fluid.page-content
+        .row
+            .col-12
+                .d-flex.flex-row
+                    include ../components/_post-actions-md.pug
+                    .row.px-4
+                        .col-md-9.px-0
+                            include ../components/_card-detail-post.pug
+                            include ../components/_card-profile.pug  
+                            include ../components/_card-post-discussion.pug
+                            include ../components/_card-post-readnext.pug
+                        .col-md-3.px-0
+                            include ../components/_card-profile-md.pug  
+    include ../components/_post-actions.pug
+    include ../components/_modal-share.pug
+                        
+

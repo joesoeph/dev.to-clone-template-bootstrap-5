@@ -1,0 +1,30 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_post-filter-tab.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_tags.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Tags
+
+block body-content
+    include ../components/_navbar.pug
+    .container-fluid.page-content
+        .row
+            each val in list_tags
+                .col-12.col-md-6.col-lg-4
+                    +card-tag(val)
+        .row
+            .col-12
+                include ../components/_button-loadmore.pug
+                    

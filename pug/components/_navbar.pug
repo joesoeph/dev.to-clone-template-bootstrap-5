@@ -1,0 +1,46 @@
+nav.navbar.navbar-expand-lg.bg-white.fixed-top.shadow-sm
+    .container-fluid
+        .d-flex.align-items-center.flex-fill
+            a.navbar-brand(href='index.html')
+                img(src='../assets/images/bootstrap-logo.svg' alt='' width='50')
+            if !is_navbar_guest
+                form.w-50
+                    input.form-control.mr-2(type='search' placeholder='Search' aria-label='Search')
+        ul.nav.flex-row
+            if !is_navbar_guest
+                li.nav-item.d-none.d-md-block
+                    a.btn.btn-primary(href='write-post.html') Write a post
+                li.nav-item
+                    button.btn.btn-link.position-relative(type='button')
+                        i.far.fa-bell
+                        span.position-absolute.top-0.left-100.translate-notif.badge.border.border-light.rounded-circle.bg-danger.p-1
+                            span.visually-hidden unread messages
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-expanded='false')
+                        i.far.fa-user
+                    ul.dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdown')
+                        li
+                            a.dropdown-item(href='profile.html')
+                                span Yusuf Fazeri
+                                br
+                                small.text-muted @joesoeph
+                        li
+                            hr.dropdown-divider
+                        li
+                            a.dropdown-item(href='dashboard-posts.html') Dashboard
+                        li
+                            a.dropdown-item(href='write-post.html') Write a post
+                        li
+                            a.dropdown-item(href='reading-lists.html') Reading list
+                        li
+                            a.dropdown-item(href='setting-account.html') Settings
+                        li
+                            hr.dropdown-divider
+                        li
+                            a.dropdown-item(href='#') Sign out
+            else
+                li.nav-item
+                    button.btn.btn-outline-primary.mx-2(type='button') Sign in
+                li.nav-item
+                    button.btn.btn-primary.mx-2(type='button') Create account
+

@@ -1,0 +1,30 @@
+mixin card-post(author_photo, author_name, post_published, post_image, post_title, post_tags)
+    .bg-white.p-4.mb-3.shadow-sm
+        .d-flex
+            img.d-block.rounded-circle.mr-2(src=author_photo alt='Profile Picture' width='40px')
+            .d-flex.flex-column
+                small.mb-0
+                    strong #{author_name}
+                small.text-muted #{post_published}
+        .pl-4.mt-2
+            img.d-none.d-md-block.img-fluid.pl-4(src=post_image alt='Post Image')
+        .d-flex.flex-column.pl-4
+            h3.pl-4.mt-2
+                a.link-dark.text-decoration-none(href='post-read.html') #{post_title}
+        .pl-4
+            .pl-4
+                each val in post_tags
+                    a.badge.bg-success.text-decoration-none.mr-2.p-2(href='tag.html') #{val}
+        .pl-4.mt-4
+            .d-flex.justify-content-between.pl-4
+                div
+                    span.p-2
+                        | 0 
+                        i.far.fa-heart.ml-2
+                    span.p-2.ml-2
+                        | 0 
+                        i.far.fa-comments.ml-2
+                div
+                    span.p-2 1 min read
+                    button.btn.btn-outline-dark
+                        i.far.fa-bookmark

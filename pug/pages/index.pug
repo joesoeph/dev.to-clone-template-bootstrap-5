@@ -1,0 +1,31 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+//- Include mixins
+include ../components/mixins/_post-filter-tab.pug
+include ../components/mixins/_card-post.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Home
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row
+            .col-md-3.d-none.d-md-block
+                include ../components/_tag-nav.pug
+            .col-12.col-md-9
+                +post-filter-tab('Posts')
+                .mt-4
+                    each val in list_posts
+                        +card-post(val.author_photo, val.author_name, val.post_published, val.post_image, val.post_title, val.post_tags)
+                include ../components/_button-loadmore.pug

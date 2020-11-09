@@ -1,0 +1,50 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Setting Account
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row    
+            .col-md-3.d-none.d-md-block
+                include ../components/_setting-nav.pug
+            .col-12.col-md-9
+                .bg-white.p-4.mb-3.shadow-sm
+                    h3.mb-4 Account Email
+                    .mb-3
+                        p
+                        span.text-muted.pr-3 Primary email
+                        |  joesoeph@mail.com
+                        p
+                        span.text-muted.pr-3 Github email
+                        |  joesoeph@mail.com
+                .bg-white.p-4.mb-3.shadow-sm
+                    h3.mb-4 Set New Password
+                    .mb-3
+                        label.form-label(for='password') Password
+                        input#password.form-control(type='password' placeholder='Password...')
+                    .mb-3
+                        label.form-label(for='new-password') Create New Password
+                        input#new-password.form-control(type='password' placeholder='Create new passsword...')
+                    .mb-3
+                        button.btn.btn-primary Set new password
+                .bg-white.p-4.mb-3.shadow-sm
+                    h3.mb-4.text-danger Danger Zone
+                    .mb-3
+                        p Delete all information about you in this site.
+                    .mb-3
+                        button.btn.btn-danger Delete account

@@ -1,0 +1,37 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Setting Notifications
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row    
+            .col-md-3.d-none.d-md-block
+                include ../components/_setting-nav.pug
+            .col-12.col-md-9
+                .bg-white.p-4.mb-3.shadow-sm
+                    h3.mb-4 Email Notification Settings
+                    .mb-3
+                        .form-check.form-switch.mb-3
+                            input#option1.form-check-input(type='checkbox')
+                            label.form-check-label(for='option1') Send me weekly newsletter emails
+                        .form-check.form-switch.mb-3
+                            input#option2.form-check-input(type='checkbox')
+                            label.form-check-label(for='option2') Send me an email when someone new follows me
+                            .mt-3
+                        button.btn.btn-primary Save notification settings
+

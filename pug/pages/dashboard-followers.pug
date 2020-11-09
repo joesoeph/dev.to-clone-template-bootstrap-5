@@ -1,0 +1,32 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-followers.pug
+
+//- Add variable you can use    
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_followers.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Dasboard Followers
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row
+            .col-md-3.d-none.d-md-block
+                include ../components/_dashboard-nav.pug
+            .col-12.col-md-9
+                .my-3.d-none.d-md-flex.justify-content-between
+                    h3 Followers
+                .row
+
+                    each val in list_followers
+                        .col-12.col-md-4
+                            +card-followers(val.photo, val.fullname, val.username)
+                include ../components/_button-loadmore.pug

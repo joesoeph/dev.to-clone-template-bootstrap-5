@@ -1,0 +1,12 @@
+mixin post-filter-tab(title)
+    .d-none.d-md-flex.justify-content-between
+        h3 #{title}
+        ul.nav.nav-pills
+            li.nav-item
+            a.nav-link.active(href='#') Latest
+            li.nav-item
+            a.nav-link(href='#') Week
+            li.nav-item 
+            a.nav-link(href='#') Month
+            li.nav-item
+            a.nav-link(href='#') Year

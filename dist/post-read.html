@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/custom.css">
+    <script src="../assets/bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Post Read</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center flex-fill"><a class="navbar-brand" href="index.html"><img src="../assets/images/bootstrap-logo.svg" alt="" width="50"></a>
+          <form class="w-50">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+        <ul class="nav flex-row">
+          <li class="nav-item d-none d-md-block"><a class="btn btn-primary" href="write-post.html">Write a post</a></li>
+          <li class="nav-item">
+            <button class="btn btn-link position-relative" type="button"><i class="far fa-bell"></i><span class="position-absolute top-0 left-100 translate-notif badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span></span></button>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="far fa-user"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="profile.html"><span>Yusuf Fazeri</span><br><small class="text-muted">@joesoeph</small></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="dashboard-posts.html">Dashboard</a></li>
+              <li><a class="dropdown-item" href="write-post.html">Write a post</a></li>
+              <li><a class="dropdown-item" href="reading-lists.html">Reading list</a></li>
+              <li><a class="dropdown-item" href="setting-account.html">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid page-content">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-row">
+            <div class="sticky-top sticky-top-gap align-self-start pt-4 d-none d-md-block">
+              <div class="d-flex flex-column"><a class="d-block btn btn-light text-center mb-1 p-2" href="#"><span class="far fa-lg fa-heart"></span>
+                  <p class="mb-0">0</p></a><a class="d-block btn btn-light text-center mb-1 p-2" href="#"><span class="far fa-lg fa-bookmark"></span>
+                  <p class="mb-0">0</p></a><a class="d-block btn btn-light text-center mb-1 p-2" href="#" data-toggle="modal" data-target="#modal-share"><span class="fas fa-lg fa-ellipsis-h"></span></a></div>
+            </div>
+            <div class="row px-4">
+              <div class="col-md-9 px-0">
+                <div class="shadow-sm bg-white"><img class="img-fluid" src="https://via.placeholder.com/1000x420?text=placeholder" alt="Cover Post">
+                  <div class="p-4 mb-3">
+                    <div class="px-4">
+                      <div class="d-flex flex-column">
+                        <h3 class="mt-2 link-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                      </div>
+                      <div class="my-3"><a class="badge bg-success p-2 mr-2 text-decoration-none" href="#">#css</a><a class="badge bg-success p-2 mr-2 text-decoration-none" href="#">#js</a><a class="badge bg-success p-2 mr-2 text-decoration-none" href="#">#html</a></div>
+                      <div class="d-flex"><img class="d-block rounded-circle mr-2" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="40px" height="40px">
+                        <div class="d-flex flex-column"><a class="mb-0 text-decoration-none text-body" href="profile.html"><strong>Yusuf Fazeri</strong></a><small class="text-muted">Nov 7 - 1 min read</small></div>
+                      </div>
+                      <div class="mt-4">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum illo voluptatum et quod error praesentium ullam atque ex, laboriosam aliquam consequuntur non quos! Earum nobis aliquid hic velit architecto magni?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-dark p-4 mb-3 shadow-sm">
+                  <div class="px-4">
+                    <div class="d-flex flex-column my-4"><small class="text-light">Posted on Nov 03 by:</small></div>
+                    <div class="d-flex"><img class="d-block rounded-circle mr-3 border border-white border-3" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="70px" height="70px">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="d-flex flex-column">
+                          <h5 class="mb-0"><a class="text-decoration-none text-white" href="profile.html">Yusuf Fazeri</a></h5><small class="mb-0"><strong><a class="text-decoration-none text-white" href="profile.html">@joesoeph</a></strong></small>
+                          <div class="my-2 text-light">I am a web developer and software engineer. I deliver all my knowledge to people for free.</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center mt-3">
+                      <div class="d-flex w-25 justify-content-end mr-3"><a class="d-block text-light mx-2" href="#"><i class="fab fa-github"></i></a><a class="d-block text-light mx-2" href="#"><i class="fas fa-link"></i></a></div>
+                      <button class="btn btn-primary">Follow</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white p-4 mb-3 shadow-sm">
+                  <div class="px-4">
+                    <!-- Header Discussion-->
+                    <div class="d-flex justify-content-between my-4">
+                      <h3>Discussion</h3>
+                    </div>
+                    <!-- ./Header Discussion-->
+                    <!-- Create Discussion-->
+                    <div>
+                      <div class="d-flex align-items-center mb-2"><img class="d-block rounded-circle mr-3" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="40px" height="40px">
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="d-flex flex-column">
+                            <div class="d-flex flex-row align-items-center"><small class="mb-0"><strong><a class="text-decoration-none text-dark" href="profile.html">Yusuf Fazeri</a></strong></small></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-4">
+                        <div class="form-group w-100">
+                          <textarea class="form-control ml-4" name="comment"></textarea>
+                          <button class="btn btn-outline-primary mt-2 ml-4">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ./Create Discussion-->
+                    <hr class="my-4">
+                    <!-- Discussion Lvl 1-->
+                    <div>
+                      <div class="d-flex align-items-center justify-content-between mt-4">
+                        <div class="d-flex"><img class="d-block rounded-circle mr-3" src="../assets/images/photo-2.jpg" alt="Profile Picture" width="40px" height="40px">
+                          <div class="d-flex flex-row align-items-center">
+                            <div class="d-flex flex-column">
+                              <div class="d-flex flex-row align-items-center"><small class="mb-0"><strong><a class="text-decoration-none text-dark" href="profile.html">Alif Apriyanto</a></strong></small><small class="text-muted ml-4">20 Nov, 2020</small></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex pl-4">
+                        <div class="w-100 pl-4">
+                          <div class="ml-2">
+                            <p class="mb-0">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora, aliquid inventore eveniet placeat qui et porro voluptatibus nemo molestiae quasi quod voluptatum dolores quisquam facilis non perspiciatis!
+                              Magni, sapiente.
+                            </p>
+                          </div>
+                          <div class="d-flex justify-content-start ml-2">
+                            <button class="btn btn-sm btn-dark m-1 mt-4"><i class="fas fa-reply"></i> Reply</button>
+                            <button class="btn btn-sm btn-outline-dark m-1 mt-4" data-toggle="collapse" data-target="#collapse-comment-1" aria-expanded="false" aria-controls="collapse-comment-1"><i class="fas fa-reply"></i> Show reply 96</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ./Discussion Lvl 1-->
+                    <!-- Discussion Lvl 2-->
+                    <div class="collapse" id="collapse-comment-1">
+                      <div class="ml-4 pl-4">
+                        <div class="d-flex align-items-center justify-content-between mt-4">
+                          <div class="d-flex"><img class="d-block rounded-circle mr-3 ml-2" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="30px" height="30px">
+                            <div class="d-flex flex-row align-items-center">
+                              <div class="d-flex flex-column">
+                                <div class="d-flex flex-row align-items-center"><small class="mb-0"><strong><a class="text-decoration-none text-dark" href="profile.html">Yusuf Fazeri</a></strong></small><small class="text-muted ml-4">20 Nov, 2020</small></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex pl-4">
+                          <div class="w-100 pl-4">
+                            <div class="ml-2"><small class="mb-0"><strong>@alifapriyanto</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora, aliquid inventore
+                                                                eveniet placeat qui et porro voluptatibus nemo molestiae quasi quod voluptatum dolores quisquam facilis
+                                                                non perspiciatis! Magni, sapiente.</small></div>
+                            <div class="d-flex justify-content-start ml-2">
+                              <button class="btn btn-sm btn-dark m-1 mt-4"><i class="fas fa-reply"></i> Reply</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ./Discussion Lvl 2-->
+                      <!-- Discussion Lvl 2-->
+                      <div class="ml-4 pl-4">
+                        <div class="d-flex align-items-center justify-content-between mt-4">
+                          <div class="d-flex"><img class="d-block rounded-circle mr-3 ml-2" src="../assets/images/photo-3.jpg" alt="Profile Picture" width="30px" height="30px">
+                            <div class="d-flex flex-row align-items-center">
+                              <div class="d-flex flex-column">
+                                <div class="d-flex flex-row align-items-center"><small class="mb-0"><strong><a class="text-decoration-none text-dark" href="profile.html">Juwadi</a></strong></small><small class="text-muted ml-4">20 Nov, 2020</small></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex pl-4">
+                          <div class="w-100 pl-4">
+                            <div class="ml-2"><small class="mb-0"><strong>@joesoeph</strong> Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit. Autem tempora, aliquid inventore
+                                                                eveniet placeat qui et porro voluptatibus nemo molestiae quasi quod voluptatum dolores quisquam
+                                                                facilis
+                                                                non perspiciatis! Magni, sapiente.</small></div>
+                            <div class="d-flex justify-content-start ml-2">
+                              <button class="btn btn-sm btn-dark m-1 mt-4"><i class="fas fa-reply"></i> Reply</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ./Discussion Lvl 2-->
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white p-4 mb-3 shadow-sm">
+                  <div class="px-4">
+                    <div class="d-flex flex-column my-4">
+                      <h3>Read Next</h3>
+                    </div>
+                    <div class="d-flex align-items-center mb-4"><img class="d-block rounded-circle mr-3" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="70px" height="70px">
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="d-flex flex-column">
+                          <h5><a class="text-decoration-none text-body" href="post-read.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h5>
+                          <div class="d-flex flex-row align-items-center"><small class="mb-0"><strong><a class="text-decoration-none text-dark" href="profile.html">Yusuf Fazeri</a></strong></small><small class="text-muted ml-4">20 Nov, 2020</small></div>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 px-0">
+                <div class="ml-3 sticky-top sticky-top-gap align-self-start shadow-sm">
+                  <div class="d-flex flex-column bg-white p-3">
+                    <div class="d-flex flex-column align-items-center"><img class="d-block rounded-circle mr-2" src="../assets/images/photo-1.jpeg" alt="Profile Picture" width="80px" height="80px"></div><a class="d-flex flex-column align-items-center text-decoration-none text-dark" href="profile.html">
+                      <p class="mb-0"></p><strong>Yusuf Fazeri</strong><small>@joesoeph</small></a><small class="mt-3">I am a web developer and software engineer. I deliver all my knowledge to people for free.</small>
+                    <button class="btn btn-block btn-primary mt-3">Follow</button>
+                    <ul class="list-unstyled mt-4"></ul>
+                    <li class="d-flex flex-column mb-2"><strong class="text-uppercase"><small>work</small></strong><small class="text-muted">Software Engineer</small></li>
+                    <li class="d-flex flex-column mb-2"><strong class="text-uppercase"><small>location</small></strong><small class="text-muted">Jakarta</small></li>
+                    <li class="d-flex flex-column mb-2"><strong class="text-uppercase"><small>joined</small></strong><small class="text-muted">Nov 01, 2020</small></li>
+                    <div class="d-flex justify-content-around mt-4"><a class="d-block text-muted" href="#"><i class="fab fa-github"></i></a><a class="d-block text-muted" href="#"><i class="fas fa-link"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-evenly bg-light fixed-bottom border-top border-1 d-md-none"><a class="d-block btn btn-light text-center mb-1 p-2" href="#"><span class="far fa-lg fa-heart"></span><span class="mb-0"> </span>0</a><a class="d-block btn btn-light text-center mb-1 p-2" href="#"><span class="far fa-lg fa-bookmark"></span><span class="mb-0"> </span>0</a><a class="d-block btn btn-light text-center mb-1 p-2" href="#" data-toggle="modal" data-target="#modal-share"><span class="fas fa-lg fa-ellipsis-h"></span></a></div>
+    <div class="modal fade" id="modal-share" tabindex="-1" aria-labelledby="modal-share-label" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Share to Social Media</h3>
+          </div>
+          <div class="modal-body"><a class="d-block btn btn-light text-left mb-1" href="#"><span>Share to Facebook</span></a><a class="d-block btn btn-light text-left mb-1" href="#"><span>Share to Twitter</span></a><a class="d-block btn btn-light text-left mb-1" href="#"><span>Share to LinkedIn</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

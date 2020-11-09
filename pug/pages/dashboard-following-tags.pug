@@ -1,0 +1,36 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-followers.pug
+include ../components/mixins/_card-dashboard-tag.pug
+
+//- Add variable you can use    
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_tags.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Dasboard Following Tags
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row
+            .col-md-3.d-none.d-md-block
+                include ../components/_dashboard-nav.pug
+            .col-12.col-md-9
+                .my-3.d-none.d-md-flex.justify-content-between
+                    h3 Following Tags
+                .row
+                    .alert.alert-simple.mt-3.mb-4.border-left.border-5.border-0.border-info.shadow(role='alert')
+                        | Adjust tag weight to modify your home feed. Higher values mean more appearances for that tag. 
+                        span.badge.bg-danger.font-monospace.d-inline Default 1.0
+
+                    each val in list_tags
+                        .col-12.col-md-4
+                            +card-dashboard-tag(val)
+                include ../components/_button-loadmore.pug

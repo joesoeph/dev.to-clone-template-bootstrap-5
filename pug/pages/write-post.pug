@@ -1,0 +1,41 @@
+//- Parent template for layouting
+extends ../components/layout.pug
+
+include ../components/mixins/_card-post.pug
+include ../components/mixins/_card-tag.pug
+
+//- Add variable you can use
+block vars
+    - var body_class = 'bg-light'
+    include ../data/list_posts.pug
+
+
+block head-content
+    include ../components/_head.pug
+
+block title
+    title Write a post
+
+block body-content
+    include ../components/_navbar.pug
+    .container.page-content
+        .row    
+            .col-12.col-md-8-offset-2
+                .bg-white.p-4.mb-3.shadow-sm
+                    .mb-3
+                        label.form-label(for='upload') Upload
+                        input#upload.form-control(type='file' placeholder='upload...')
+                        small.d-block.text-muted File max dimension 1000:420
+                    .mb-3
+                        label.form-label(for='title') Title
+                        input#title.form-control(type='text' placeholder='Title...')
+                    .mb-3
+                        label.form-label(for='tags') Tags
+                        input#tags.form-control(type='text' placeholder='Tags...')
+                    .mb-3
+                        label.form-label(for='tags') Content
+                        textarea#content.form-control(placeholder='Content...')
+
+                    .mb-3
+                        button.btn.btn-primary Published
+                    
